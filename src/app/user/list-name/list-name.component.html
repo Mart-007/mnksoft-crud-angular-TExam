@@ -1,0 +1,45 @@
+<div class="col-md-6 user-container">
+    <h2 style="margin: auto"> User Details</h2>
+    <button class="btn btn-danger" style="width:100px" (click)="addUser()"> Add User</button>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th class="hidden">Id</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Address</th>
+        <th>Current/Previous salary</th>
+        <th>Expected salary</th>
+        <th>Is shifting / night shift of with you?</th>
+        <th>How about working on holidays?</th>
+        <th>Reason why leaving</th>
+        <th>Do you have laptop? Specs? Processor? ram?</th>
+        <th>Do you have internet connection? Provider and speed?</th>
+        <th>Technical skills familiar with?</th>
+        <th>Pending application</th>
+        <th>Hobbies?</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let user of users">
+        <td class="hidden"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+
+        <td><button class="btn btn-success" (click)="deleteUser(user)"> Delete</button>
+          <button class="btn btn-success" (click)="editUser(user)" style="margin-left: 20px;"> Edit</button></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>

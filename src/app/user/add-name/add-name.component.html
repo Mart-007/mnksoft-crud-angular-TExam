@@ -1,0 +1,75 @@
+<div class="col-md-6 user-container">
+    <h2 class="text-center">Add User</h2>
+    <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name"> Name: </label>
+        <input type="text" formControlName="name" placeholder="name" name="name" class="form-control" id="name">
+      </div>
+  
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" formControlName="password" placeholder="password" name="password" class="form-control" id="password">
+      </div>
+  
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input formControlName="age" placeholder="age" name="age" class="form-control" id="age">
+      </div>
+  
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <input formControlName="address" placeholder="adress" name="address" class="form-control" id="address">
+      </div>
+  
+      <div class="form-group">
+        <label for="salary">Current/Previous salary:</label>
+        <input type="number" formControlName="salary" placeholder="salary" name="salary" class="form-control" id="salary">
+      </div>
+  
+      <div class="form-group">
+        <label for="esalary">Expected salary:</label>
+        <input type="number" formControlName="esalary" placeholder="esalary" name="esalary" class="form-control" id="esalary">
+      </div>
+
+      <div class="form-group">
+        <label for="shifting">Is shirfting / night shift ok with you:</label>
+        <input formControlName="shifting" placeholder="shifting" name="shifting" class="form-control" id="shifting">
+      </div>
+
+      <div class="form-group">
+        <label for="holidays">How about working on holidays:</label>
+        <input formControlName="holidays" placeholder="holidays" name="holidays" class="form-control" id="holidays">
+      </div>
+
+      <div class="form-group">
+        <label for="rleaving">Reason why leaving:</label>
+        <input formControlName="rleaving" placeholder="rleaving" name="rleaving" class="form-control" id="rleaving">
+      </div>
+
+      <div class="form-group">
+        <label for="slaptop">Do you have your own laptop? Specs? Processor? ram?:</label>
+        <input formControlName="slaptop" placeholder="slaptop" name="slaptop" class="form-control" id="slaptop">
+      </div>
+
+      <div class="form-group">
+        <label for="internet">Do you have internet connection? Provider and speed?:</label>
+        <input formControlName="internet" placeholder="internet" name="internet" class="form-control" id="internet">
+      </div>
+     
+      <div class="form-group">
+        <label for="tskills">Technical skills familiar with?:</label>
+        <input formControlName="tskills" placeholder="tskills" name="tskills" class="form-control" id="tskills">
+      </div>
+
+      <div class="form-group">
+        <label for="papplication">Pending application:</label>
+        <input formControlName="papplication" placeholder="papplication" name="papplication" class="form-control" id="papplication">
+      </div>
+
+      <div class="form-group">
+        <label for="hobbies">Hobbies:</label>
+        <input formControlName="hobbies" placeholder="hobbies" name="hobbies" class="form-control" id="hobbies">
+      </div>
+      <button class="btn btn-success">Add</button>
+    </form>
+  </div>
